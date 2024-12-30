@@ -1,0 +1,132 @@
+// @media (min-width: 1200px) {
+//     /* Stylizacje dla większych laptopów i monitorów desktopowych */
+// }
+
+
+
+@media (min-width: 1200px) {
+
+    .header {
+        &__tittle {
+            font-size: 2rem;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+        }
+    }
+
+    .hero {
+        background-attachment: fixed;
+        height: auto;
+
+    }
+
+    .review {
+
+
+        &__text {
+            margin-left: 3em;
+        }
+
+        &__tittle {
+            font-size: 2rem;
+        }
+
+        a {
+
+
+            img {
+                top: -25px;
+                left: -25px;
+                width: 120px;
+                height: 90px;
+            }
+        }
+
+
+
+        &__text {
+            font-size: 2rem;
+        }
+    }
+
+    .info {
+
+        &__icon {
+            font-size: 3rem;
+
+        }
+
+
+
+        &__header {
+            font-size: 2rem;
+
+        }
+
+    }
+
+
+    .about {
+
+        &__box {
+            padding: .5em 1em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        &__title {
+
+            font-size: 2.5rem;
+
+
+        }
+
+        &__box {
+            padding: 1em 1em;
+
+
+
+        }
+
+        &__img {
+            width: 650px;
+        }
+
+        &__list {
+
+
+            &--item {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+
+
+    .logo {
+
+
+        &__img {
+            width: 100px;
+            height: 100px;
+
+            &--toyota {
+                height: 100px;
+            }
+
+            &--nissan {
+                width: 130px;
+                height: 85px;
+            }
+
+
+        }
+    }
+
+   
+
+}

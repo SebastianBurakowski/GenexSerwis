@@ -1,0 +1,94 @@
+// >1200px
+
+
+ @media (min-width: 1400px) {
+
+     .header {
+         &__tittle {
+             font-size: 3rem;
+         }
+
+     }
+
+
+     .hero {
+
+         &__text {
+             font-size: 2rem;
+             padding: .5em;
+         }
+
+
+         &__lamp2 {
+             left: 630px;
+             top: 210px;
+         }
+
+         &__lamp3 {
+             left: 660px;
+             top: 210px;
+         }
+
+         &__lamp4 {
+             left: 853px;
+             top: 213px;
+         }
+     }
+
+     .about {
+
+         &__title {
+
+             font-size: 3rem;
+
+
+         }
+
+
+         &__img {
+             width: 750px;
+         }
+
+         &__list {
+
+
+             &--item {
+                 font-size: 2rem;
+             }
+         }
+     }
+
+           .service {
+               &__tittle {
+                   font-family: "Audiowide", sans-serif;
+                   text-transform: uppercase;
+                   font-size: 1.6rem;
+                   color: grey;
+                   border-bottom: 1px solid whitesmoke;
+                   padding: .5em 0;
+               }
+    
+               &__text {
+                   font-size: 1.1rem;
+                   text-transform: capitalize;
+               }
+    
+               &__box {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   flex-direction: column;
+                   background: rgba(255, 255, 255, 0.1);
+                   text-align: center;
+                   width: 250px;
+                   height: 350px;
+                   border: none;
+                   border-radius: 10px;
+                   padding: 1em .5em;
+                   transition: .3s;
+
+               }
+
+    
+           }
+ }
