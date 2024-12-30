@@ -1,738 +1,422 @@
 // <480px
 
-@media (max-width: 320px) {
 
-    .header {
-        color: whitesmoke;
-        background-image: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
-        text-align: center;
-        padding: .3em 0;
+.header {
+    color: whitesmoke;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
+    text-align: center;
+    padding: .3em 0;
 
-        &__tittle {
-            font-family: "Audiowide", sans-serif;
-            font-size: 0.9rem;
-
-        }
-
-        &__span {
-            color: red;
-        }
+    &__tittle {
+        font-family: "Audiowide", sans-serif;
+        font-size: 0.9rem;
 
     }
 
-    .hero {
-        position: relative;
+    &__span {
+        color: red;
+    }
+
+}
+
+.hero {
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+        url("/dist/img/background_header2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    height: 50vh;
+    z-index: 2;
+    overflow: hidden;
+
+    &__info {
+        padding: .2em;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: column;
-        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-            url("/dist/img/background_header2.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        flex-direction: row;
         width: 100%;
-        height: 50vh;
-        z-index: 2;
-        overflow: hidden;
-
-        &__info {
-            padding: .2em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
-            width: 100%;
-        }
-
-        &__text {
-            color: whitesmoke;
-            font-size: .6rem;
-
-            .fa-phone {
-                margin-right: 0.4em;
-            }
-        }
-
-
-        &__img {
-            width: 150px;
-            height: 125px;
-            opacity: 0.5;
-        }
-
-        &__lamp,
-        &__lamp2,
-        &__lamp3,
-        &__lamp4 {
-            left: 885px;
-            top: 212px;
-            position: absolute;
-            width: 23px;
-            height: 23px;
-            background-color: white;
-            border-radius: 50%;
-            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.7);
-
-            opacity: 0;
-
-            filter: blur(20px);
-
-            animation: lightUp 1s ease-in-out 0s 3 alternate;
-
-
-        }
-
-        &__lamp2 {
-            left: 130px;
-            top: 100px;
-        }
-
-        &__lamp3 {
-            left: 235px;
-            top: 100px;
-        }
-
-        &__lamp4 {
-            left: 255px;
-            top: 100px;
-        }
-
     }
 
-    @keyframes lightUp {
-        0% {
-            opacity: 0;
-            filter: blur(20px);
-            /* Mocno rozmyte na początku */
-            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.1);
-            /* Słabo widoczny cień */
-        }
+    &__text {
+        color: whitesmoke;
+        font-size: .6rem;
 
-        50% {
-            opacity: 1;
-            filter: blur(5px);
-            /* Mniejsze rozmycie */
-            box-shadow: 0px 0px 100px rgba(255, 255, 255, 1);
-            /* Światło staje się mocniejsze */
-        }
-
-        100% {
-            opacity: 0;
-            filter: blur(20px);
-            /* Rozmycie wraca */
-            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.1);
-            /* Zmniejszone światło */
+        .fa-phone {
+            margin-right: 0.4em;
         }
     }
 
-    .info {
 
-        &__icon {
-            font-size: 1rem;
-            padding: .5em 0;
-        }
 
-        &__cards {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100vw;
-        }
-
-        &__card {
-            color: whitesmoke;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            width: 200px;
-            border-radius: 8px;
-            padding: .5em 1em;
-        }
-
-        &__header {
-            font-size: .8rem;
-            color: white;
-        }
+    &__img {
+        width: 150px;
+        height: 125px;
+        opacity: 0.5;
     }
 
-    .info__card:nth-child(1) {
+    &__lamp,
+    &__lamp2,
+    &__lamp3,
+    &__lamp4 {
+        left: 885px;
+        top: 212px;
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.7);
+
         opacity: 0;
-        animation: fadeIn 2s ease-out forwards;
-        /* Karta 1 pojawia się po 2 sekundach */
+
+        filter: blur(20px);
+
+        animation: lightUp 1s ease-in-out 0s 3 alternate;
+
+
     }
 
-    .info__card:nth-child(2) {
+    &__lamp2 {
+        left: 130px;
+        top: 100px;
+    }
+
+    &__lamp3 {
+        left: 235px;
+        top: 100px;
+    }
+
+    &__lamp4 {
+        left: 255px;
+        top: 100px;
+    }
+
+}
+
+@keyframes lightUp {
+    0% {
         opacity: 0;
-        animation: fadeIn 2s ease-out forwards;
-        animation-delay: 1s;
-        /* Karta 2 pojawia się po 4 sekundach */
+        filter: blur(20px);
+        /* Mocno rozmyte na początku */
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.1);
+        /* Słabo widoczny cień */
     }
 
-    .info__card:nth-child(3) {
+    50% {
+        opacity: 1;
+        filter: blur(5px);
+        /* Mniejsze rozmycie */
+        box-shadow: 0px 0px 100px rgba(255, 255, 255, 1);
+        /* Światło staje się mocniejsze */
+    }
+
+    100% {
         opacity: 0;
-        animation: fadeIn 2s ease-out forwards;
-        animation-delay: 2s;
-        /* Karta 3 pojawia się po 6 sekundach */
+        filter: blur(20px);
+        /* Rozmycie wraca */
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.1);
+        /* Zmniejszone światło */
+    }
+}
+
+.info {
+
+    &__icon {
+        font-size: 1rem;
+        padding: .5em 0;
     }
 
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-
-            /* Efekt przesunięcia */
-        }
-
-        100% {
-            opacity: 1;
-
-        }
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
     }
 
+    &__card {
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 200px;
+        border-radius: 8px;
+        padding: .5em 1em;
+    }
 
-    .review {
-        // height: 10vh;
-        padding: 0.5em 1em;
-        background-color: black;
+    &__header {
+        font-size: .7rem;
+        color: white;
+    }
+}
+
+.info__card:nth-child(1) {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    /* Karta 1 pojawia się po 2 sekundach */
+}
+
+.info__card:nth-child(2) {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1s;
+    /* Karta 2 pojawia się po 4 sekundach */
+}
+
+.info__card:nth-child(3) {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 2s;
+    /* Karta 3 pojawia się po 6 sekundach */
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+
+        /* Efekt przesunięcia */
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+
+.review {
+    // height: 10vh;
+    padding: 0.5em 1em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    &__text {
+        font-size: .8rem;
+        font-weight: bold;
+        margin-left: 2em;
+
+    }
+
+    &__tittle {
+        text-align: center;
+        font-family: "Audiowide", sans-serif;
+        font-size: .6rem;
+        margin-right: 1em;
+    }
+
+    &__box {
+        position: relative;
+    }
+
+    &__box,
+    &__info {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-
-        &__text {
-            margin-left: 2em;
-            font-size: .8rem;
-        }
-
-        &__tittle {
-            text-align: center;
-            font-family: "Audiowide", sans-serif;
-            font-size: 3rem;
-            margin-right: 1em;
-        }
-
-        &__box {
-            position: relative;
-        }
-
-        &__box,
-        &__info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            font-size: 1.2rem;
-        }
-
-        a {
-            margin-right: 1em;
-
-            img {
-                position: absolute;
-                top: -12px;
-                left: -20px;
-                width: 45px;
-                height: 40px;
-            }
-        }
-
-        &__info {
-            margin-right: 2em;
-
-        }
-
+        font-size: 1.2rem;
     }
 
+    a {
+        margin-right: 1em;
 
-    .about {
-        &__title {
-            font-family: "Audiowide", sans-serif;
-            font-size: 1rem;
-            padding: .3em .5em;
-            border-bottom: 1px solid white;
-        }
-
-        &__box {
-            padding: .5em 1em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
-
-        &__img {
-            width: 120px;
-            border-radius: 8px;
-            margin-right: .5em;
-            box-shadow: 5px 5px 10px rgba($color: #ffffff2e, $alpha: 0.2);
-        }
-
-        &__list {
-            list-style: none;
-
-            &--item {
-                padding: .3em 0;
-                font-size: .6rem;
-            }
-        }
-
-        i {
-            padding: 0 .5em;
+        img {
+            position: absolute;
+            top: -12px;
+            left: -20px;
+            width: 45px;
+            height: 40px;
         }
     }
 
-
-    .logo {
-        background-color: black;
-
-        &__box {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        &__img {
-            width: 100px;
-            height: 100px;
-        }
-    }
-
-    .services {
-        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-            url("/dist/img/background_header2.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        &__boxes {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: .5em 1em;
-        }
-    }
-
-    .service {
-        &__box {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            background: rgba(255, 255, 255, 0.1);
-            text-align: center;
-            border-radius: 10px;
-            padding: 1em .5em;
-            transition: .3s;
-            margin: 1em 0 .5em 0;
-
-            &:hover {
-                box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.3);
-            }
-        }
-
-        &__tittle {
-            font-size: 1rem;
-            font-family: "Audiowide", sans-serif;
-            text-transform: uppercase;
-            color: grey;
-            border-bottom: 1px solid whitesmoke;
-            margin-bottom: 2em;
-            padding: .5em 0;
-        }
-
-        &__text {
-            font-size: .8rem;
-            padding: .5em;
-        }
-
+    &__info {
+        margin-right: 2em;
 
     }
 
 }
 
 
-@media (min-width: 320px) {
-
-    .header {
-        color: whitesmoke;
-        background-image: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
-        text-align: center;
-        padding: .3em 0;
-
-        &__tittle {
-            font-family: "Audiowide", sans-serif;
-            font-size: 0.9rem;
-
-        }
-
-        &__span {
-            color: red;
-        }
-
+.about {
+    &__title {
+        font-family: "Audiowide", sans-serif;
+        font-size: 1.2rem;
+        padding: .3em .5em;
+        border-bottom: 1px solid white;
     }
 
-    .hero {
-
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-            url("/dist/img/background_header2.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        width: 100%;
-        height: 50vh;
-        z-index: 2;
-        overflow: hidden;
-
-        &__info {
-            padding: .2em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
-            width: 100%;
-        }
-
-        &__text {
-            color: whitesmoke;
-            font-size: .6rem;
-
-            .fa-phone {
-                margin-right: 0.4em;
-            }
-        }
-
-
-
-        &__img {
-            width: 150px;
-            height: 125px;
-            opacity: 0.5;
-        }
-
-        &__lamp,
-        &__lamp2,
-        &__lamp3,
-        &__lamp4 {
-            left: 885px;
-            top: 212px;
-            position: absolute;
-            width: 23px;
-            height: 23px;
-            background-color: white;
-            border-radius: 50%;
-            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.7);
-
-            opacity: 0;
-
-            filter: blur(20px);
-
-            animation: lightUp 1s ease-in-out 0s 3 alternate;
-
-
-        }
-
-        &__lamp2 {
-            left: 130px;
-            top: 100px;
-        }
-
-        &__lamp3 {
-            left: 235px;
-            top: 100px;
-        }
-
-        &__lamp4 {
-            left: 255px;
-            top: 100px;
-        }
-
-    }
-
-    @keyframes lightUp {
-        0% {
-            opacity: 0;
-            filter: blur(20px);
-            /* Mocno rozmyte na początku */
-            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.1);
-            /* Słabo widoczny cień */
-        }
-
-        50% {
-            opacity: 1;
-            filter: blur(5px);
-            /* Mniejsze rozmycie */
-            box-shadow: 0px 0px 100px rgba(255, 255, 255, 1);
-            /* Światło staje się mocniejsze */
-        }
-
-        100% {
-            opacity: 0;
-            filter: blur(20px);
-            /* Rozmycie wraca */
-            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.1);
-            /* Zmniejszone światło */
-        }
-    }
-
-    .info {
-
-        &__icon {
-            font-size: 1rem;
-            padding: .5em 0;
-        }
-
-        &__cards {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100vw;
-        }
-
-        &__card {
-            color: whitesmoke;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            width: 200px;
-            border-radius: 8px;
-            padding: .5em 1em;
-        }
-
-        &__header {
-            font-size: .7rem;
-            color: white;
-        }
-    }
-
-    .info__card:nth-child(1) {
-        opacity: 0;
-        animation: fadeIn 2s ease-out forwards;
-        /* Karta 1 pojawia się po 2 sekundach */
-    }
-
-    .info__card:nth-child(2) {
-        opacity: 0;
-        animation: fadeIn 2s ease-out forwards;
-        animation-delay: 1s;
-        /* Karta 2 pojawia się po 4 sekundach */
-    }
-
-    .info__card:nth-child(3) {
-        opacity: 0;
-        animation: fadeIn 2s ease-out forwards;
-        animation-delay: 2s;
-        /* Karta 3 pojawia się po 6 sekundach */
-    }
-
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-
-            /* Efekt przesunięcia */
-        }
-
-        100% {
-            opacity: 1;
-
-        }
-    }
-
-
-    .review {
-        // height: 10vh;
-        padding: 0.5em 1em;
-        background-color: black;
+    &__box {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
+        width: 100%;
+    }
 
-        &__text {
+    &__img {
+        width: 250px;
+        margin-top: .5em;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgba($color: #ffffff2e, $alpha: 0.2);
+    }
+
+    &__list {
+        list-style: none;
+        padding: .5em 0;
+
+        &--item {
             font-size: .8rem;
-            font-weight: bold;
-            margin-left: 2em;
+            margin-bottom: .5em;
 
         }
-
-        &__tittle {
-            text-align: center;
-            font-family: "Audiowide", sans-serif;
-            font-size: .6rem;
-            margin-right: 1em;
-        }
-
-        &__box {
-            position: relative;
-        }
-
-        &__box,
-        &__info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            font-size: 1.2rem;
-        }
-
-        a {
-            margin-right: 1em;
-
-            img {
-                position: absolute;
-                top: -12px;
-                left: -20px;
-                width: 45px;
-                height: 40px;
-            }
-        }
-
-        &__info {
-            margin-right: 2em;
-
-        }
-
     }
 
+}
 
-    .about {
-        &__title {
-            font-family: "Audiowide", sans-serif;
-            font-size: 1.2rem;
-            padding: .3em .5em;
-            border-bottom: 1px solid white;
-        }
 
-        &__box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-        }
+.logo {
+    background-color: black;
+    height: 50px;
 
-        &__img {
-            width: 250px;
-            margin-top: .5em;
-            border-radius: 8px;
-            box-shadow: 5px 5px 10px rgba($color: #ffffff2e, $alpha: 0.2);
-        }
 
-        &__list {
-            list-style: none;
-            padding: .5em 0;
-
-            &--item {
-                font-size: .8rem;
-                margin-bottom: .5em;
-
-            }
-        }
-
+    &__box {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow: hidden;
     }
 
-
-    .logo {
-        background-color: black;
+    &__img {
+        width: 50px;
         height: 50px;
 
-
-        &__box {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            overflow: hidden;
+        &--bmw {
+            height: 55px;
         }
 
-        &__img {
-            width: 50px;
-            height: 50px;
-
-            &--bmw {
-                height: 55px;
-            }
-
-            &--toyota {
-                height: 45px;
-            }
-
-            &--nissan {
-                height: 35px;
-            }
-
-
-        }
-    }
-
-
-    .services {
-        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-            url("/dist/img/background_header2.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        &__boxes {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: .5em 1em;
-        }
-    }
-
-    .service {
-        &__box {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            background: rgba(255, 255, 255, 0.1);
-            text-align: center;
-            border-radius: 10px;
-            padding: 1em .5em;
-            transition: .3s;
-            margin: 1em 0 .5em 0;
-
-            &:hover {
-                box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.3);
-            }
+        &--toyota {
+            height: 45px;
         }
 
-        &__tittle {
-            font-size: 1rem;
-            font-family: "Audiowide", sans-serif;
-            text-transform: uppercase;
-            color: grey;
-            border-bottom: 1px solid whitesmoke;
-            margin-bottom: 2em;
-            padding: .5em 0;
-        }
-
-        &__text {
-            font-size: .8rem;
-            padding: .5em;
+        &--nissan {
+            height: 35px;
         }
 
 
     }
+}
+
+
+.services {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+        url("/dist/img/background_header2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &__boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: .5em 1em;
+    }
+}
+
+.service {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.1);
+        text-align: center;
+        border-radius: 10px;
+        padding: 1em .5em;
+
+        transition: outline, box-shadow 1s;
+        margin: 1em 0 .5em 0;
+
+        &:hover {
+            box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.3);
+
+        }
+    }
+
+    &__tittle {
+        font-size: 1rem;
+        font-family: "Audiowide", sans-serif;
+        text-transform: uppercase;
+        color: grey;
+        border-bottom: 1px solid whitesmoke;
+        margin-bottom: 2em;
+        padding: .5em 0;
+    }
+
+    &__text {
+        font-size: .8rem;
+        padding: .5em;
+    }
+
 
 }
+
+.opinions {
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5em 1em;
+        
+    }
+}
+
+.opinion {
+
+    &__box {
+        border: 1px solid wheat;
+        border-radius: 8px;
+        margin-bottom: 1em;
+
+    }
+
+    &__name {
+        font-size: .9rem;
+        padding: .5em 0;
+        text-align: center;
+
+    }
+
+    &__text {
+        text-align: center;
+        font-size: .8rem;
+        padding: .5em;
+    }
+
+    &__stars {
+        color: goldenrod;
+        text-align: center;
+        font-size: .7rem;
+        padding: .5em 0;
+    }
+}
+
+
 
 
 
@@ -869,7 +553,7 @@
 
 
     .service {
-       
+
 
         &__tittle {
             font-size: 1.2rem;
