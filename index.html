@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/35828e693f.js" crossorigin="anonymous"></script>
 
 
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 
     <link rel="stylesheet" href="dist/css/style.min.css">
@@ -35,7 +35,11 @@
     <section class="hero">
         <div class="hero__info">
             <p class="hero__text">Warszawska 530, Koczargi Nowe</p>
-            <p class="hero__text hero_tele"><i class="fa-solid fa-phone"></i>733 700 037</p>
+            <div class="hero__number">
+                <p class="hero__text hero_tele"><i class="fa-solid fa-phone"></i></p>
+                <p class="hero__text hero_tele">733 700 037</p>
+                <p class="hero__text hero_tele">733 700 037</p>
+            </div>
         </div>
         <img src="dist/img/header_img2.png" alt="czarne audi" class="hero__img">
         <div class="hero__lamp"></div>
@@ -125,54 +129,10 @@
             <img src="dist/img/nissanl.jpg" alt="" class="logo__img logo__img--nissan">
         </div>
     </section>
-
-    <section class="services section">
-        <div class="services__boxes">
-            <div class="service__boxes--top">
-                <div class="service__box">
-                    <h2 class="service__tittle">Wymiana opom</h2>
-                    <p class="service__text">Oferujemy profesjonalną wymianę i wyważanie opon, aby zapewnić Ci
-                        bezpieczną
-                        jazdę.</p>
-                </div>
-                <div class="service__box">
-                    <h2 class="service__tittle">Serwis olejowy</h2>
-                    <p class="service__text">Zmieniamy olej silnikowy oraz filtry, dbając o sprawność Twojego
-                        silnika.(Również w skrzyniach automatycznych)</p>
-                </div>
-                <div class="service__box">
-                    <h2 class="service__tittle">Naprawy powypadkowe</h2>
-                    <p class="service__text">Przywracamy samochody do stanu sprzed kolizji, oferując kompleksowe
-                        naprawy.
-                    </p>
-                </div>
-            </div>
-            <div class="service__boxes--bottom">
-                <div class="service__box">
-                    <h2 class="service__tittle">Naprawa hamulców</h2>
-                    <p class="service__text">Regenerujemy i wymieniamy tarcze, klocki oraz inne elementy układu
-                        hamulcowego.
-                    </p>
-                </div>
-                <div class="service__box">
-                    <h2 class="service__tittle">Diagnostyka komputerowa</h2>
-                    <p class="service__text">Wykrywamy i naprawiamy usterki za pomocą nowoczesnych narzędzi
-                        diagnostycznych.
-                    </p>
-                </div>
-                <div class="service__box">
-                    <h2 class="service__tittle">I wiele więcej</h2>
-                    <p class="service__text">Oferujemy szeroki wachlarz innych usług mechanicznych, dopasowanych do
-                        indywidualnych potrzeb Twojego pojazdu.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="opinions section">
+    <section class="opinions">
         <div class="opinions__box">
             <div class="opinion__box">
-                <h2 class="opinion__name">Małgorzata Jagielska-Zabulska</h2>
+                <h2 class="opinion__name">Małgorzata Jagielska</h2>
                 <p class="opinion__stars">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -220,6 +180,51 @@
 
     </section>
 
+    <section class="services section">
+        <div class="services__boxes">
+            <div class="service__boxes--top">
+                <div class="service__box">
+                    <h2 class="service__tittle">Wymiana opom</h2>
+                    <p class="service__text">Oferujemy profesjonalną wymianę i wyważanie opon, aby zapewnić Ci
+                        bezpieczną
+                        jazdę.</p>
+                </div>
+                <div class="service__box">
+                    <h2 class="service__tittle">Serwis olejowy</h2>
+                    <p class="service__text">Zmieniamy olej silnikowy oraz filtry, dbając o sprawność Twojego
+                        silnika.(Również w skrzyniach automatycznych)</p>
+                </div>
+                <div class="service__box">
+                    <h2 class="service__tittle">Naprawy powypadkowe</h2>
+                    <p class="service__text">Przywracamy samochody do stanu sprzed kolizji, oferując kompleksowe
+                        naprawy.
+                    </p>
+                </div>
+            </div>
+            <div class="service__boxes--bottom">
+                <div class="service__box">
+                    <h2 class="service__tittle">Naprawa hamulców</h2>
+                    <p class="service__text">Regenerujemy i wymieniamy tarcze, klocki oraz inne elementy układu
+                        hamulcowego.
+                    </p>
+                </div>
+                <div class="service__box">
+                    <h2 class="service__tittle">Diagnostyka komputerowa</h2>
+                    <p class="service__text">Wykrywamy i naprawiamy usterki za pomocą nowoczesnych narzędzi
+                        diagnostycznych.
+                    </p>
+                </div>
+                <div class="service__box">
+                    <h2 class="service__tittle">I wiele więcej</h2>
+                    <p class="service__text">Oferujemy szeroki wachlarz innych usług mechanicznych, dopasowanych do
+                        indywidualnych potrzeb Twojego pojazdu.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
 
 
 
@@ -231,7 +236,9 @@
     </footer> -->
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="dist/js/slick.min.js"></script>
 </body>
 

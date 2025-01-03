@@ -377,26 +377,37 @@
 }
 
 .opinions {
+    background-color: rgba(0, 0, 0);
+    color: whitesmoke;
+    padding: 1em 0;
+    border-top: 1px solid whitesmoke;
+
     &__box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         padding: .5em 1em;
-        
+
     }
 }
 
 .opinion {
 
     &__box {
-        border: 1px solid wheat;
-        border-radius: 8px;
-        margin-bottom: 1em;
+        margin-top: .5em;
+        position: relative;
+        border-top: 1px solid wheat;
+        border-bottom: 1px solid wheat;
+        // border-radius: 8px;
+
 
     }
 
     &__name {
-        font-size: .9rem;
+        background-color: rgba(0, 0, 0);
+        z-index: 2;
+        position: absolute;
+        top: -15px;
+        left: 10px;
+        font-size: .8rem;
         padding: .5em 0;
         text-align: center;
 
@@ -404,14 +415,18 @@
 
     &__text {
         text-align: center;
-        font-size: .8rem;
-        padding: .5em;
+        font-size: .7rem;
+        padding: 1em;
     }
 
     &__stars {
+        position: absolute;
+        background-color: rgba(0, 0, 0);
+        top: -15px;
+        left: 180px;
         color: goldenrod;
         text-align: center;
-        font-size: .7rem;
+        font-size: .8rem;
         padding: .5em 0;
     }
 }
@@ -523,6 +538,26 @@
 
 
     }
+
+
+    .opinion {
+
+        &__name {
+            top: -17px;
+            left: 10px;
+            font-size: .9rem;
+        }
+
+        &__text {
+            font-size: .8rem;
+        }
+
+        &__stars {
+            top: -17px;
+            left: 220px;
+            font-size: .9rem;
+        }
+    }
 }
 
 
@@ -565,5 +600,14 @@
 
         }
     }
+
+        .opinion {
+
+    
+            &__stars {
+                top: -17px;
+                left: 260px;
+            }
+        }
 
 }

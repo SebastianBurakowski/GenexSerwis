@@ -4,12 +4,21 @@
  // @media (min-width: 576px) {
  //     /* Stylizacje dla większych telefonów */
  // }
- 
- 
- 
- 
+
+
+
+
  @media (min-width: 480px) {
-  
+     .opinion {
+
+
+         &__stars {
+             top: -18px;
+             left: 300px;
+
+         }
+     }
+
  }
 
 
@@ -96,25 +105,44 @@
 
      }
 
-         .logo {
-            height: 100%;
-    
-             &__img {
-                 width: 70px;
+     .logo {
+         height: 100%;
+
+         &__img {
+             width: 70px;
+             height: 70px;
+
+             &--toyota {
                  height: 70px;
-    
-                 &--toyota {
-                     height: 70px;
-                 }
-    
-                 &--nissan {
-                    width: 75px;
-                     height: 55px;
-                 }
-    
-    
              }
+
+             &--nissan {
+                 width: 75px;
+                 height: 55px;
+             }
+
+
          }
+     }
+
+     .opinion {
+
+         &__name {
+             top: -18px;
+             left: 10px;
+             font-size: 1rem;
+         }
+
+         &__text {
+             font-size: .9rem;
+         }
+
+         &__stars {
+             top: -19px;
+             left: 400px;
+             font-size: 1rem;
+         }
+     }
  }
 
 
@@ -130,18 +158,18 @@
          }
 
          &__box {
-            flex-direction: row;
+             flex-direction: row;
              padding: .5em 1em;
 
 
          }
 
-                  &__img {
-                      width: 300px;
-                  }
+         &__img {
+             width: 300px;
+         }
 
          &__list {
-            padding: 0 .5em;
+             padding: 0 .5em;
 
 
              &--item {
@@ -156,30 +184,50 @@
      }
 
 
-              .logo { 
-             &__img {
+     .logo {
+         &__img {
 
-                 &--nissan {
-                    width: 80px;
-                     height: 55px;
-                 } 
+             &--nissan {
+                 width: 80px;
+                 height: 55px;
              }
          }
+     }
 
 
-                         .service {
-                            
-            
-                             &__tittle {
-                                 font-size: 1.4rem;
-            
-                             }
-            
-                             &__text {
-                                 font-size: 1.2rem;
-            
-                             }
-                         }
-     
+     .service {
+
+
+         &__tittle {
+             font-size: 1.4rem;
+
+         }
+
+         &__text {
+             font-size: 1.2rem;
+
+         }
+     }
+
+
+     .opinion {
+
+         &__name {
+             top: -19px;
+             left: 15px;
+             font-size: 1.1rem;
+         }
+
+         &__text {
+             font-size: 1rem;
+         }
+
+         &__stars {
+             top: -20px;
+             left: 480px;
+             font-size: 1.1rem;
+         }
+     }
+
 
  }

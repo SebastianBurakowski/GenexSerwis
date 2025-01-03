@@ -7,109 +7,109 @@
 
 
 
- @media (min-width: 768px) {
+@media (min-width: 768px) {
 
-     .header {
-         &__tittle {
-             font-size: 2rem;
-         }
-
-
-     }
-
-     .hero {
-         height: 70vh;
-
-         &__img {
-             width: 350px;
-             height: 300px;
-
-         }
-
-         &__text {
-             font-size: 1.6rem;
-
-         }
-
-         .fa-phone {
-             font-size: 1.6rem;
-         }
-     }
-
-     .review {
-         &__tittle {
-             font-size: 1.6rem;
-         }
-
-         &__text {
-             font-size: 1.6rem;
-         }
-
-         a {
+    .header {
+        &__tittle {
+            font-size: 2rem;
+        }
 
 
-             img {
-                 top: -11px;
-                 left: -13px;
-                 width: 65px;
-                 height: 55px;
+    }
 
-             }
-         }
-     }
+    .hero {
+        height: 70vh;
 
-     .info {
+        &__img {
+            width: 350px;
+            height: 300px;
 
+        }
 
-         &__icon {
-             font-size: 1.6rem;
-         }
+        &__text {
+            font-size: 1.6rem;
 
+        }
 
-         &__header {
-             font-size: 1.6rem;
+        .fa-phone {
+            font-size: 1.6rem;
+        }
+    }
 
-         }
-     }
+    .review {
+        &__tittle {
+            font-size: 1.6rem;
+        }
 
+        &__text {
+            font-size: 1.6rem;
+        }
 
-
-     .about {
-         &__title {
-
-             font-size: 2rem;
-             padding: .2em .5em;
-
-         }
-
-         &__box {
-             padding: .5em 1em;
+        a {
 
 
-         }
+            img {
+                top: -11px;
+                left: -13px;
+                width: 65px;
+                height: 55px;
 
-         &__img {
-             width: 350px;
+            }
+        }
+    }
 
-         }
-
-         &__list {
+    .info {
 
 
-             &--item {
+        &__icon {
+            font-size: 1.6rem;
+        }
 
-                 font-size: 1.3rem;
-             }
-         }
-     }
 
- .services {
+        &__header {
+            font-size: 1.6rem;
+
+        }
+    }
+
+
+
+    .about {
+        &__title {
+
+            font-size: 2rem;
+            padding: .2em .5em;
+
+        }
+
+        &__box {
+            padding: .5em 1em;
+
+
+        }
+
+        &__img {
+            width: 350px;
+
+        }
+
+        &__list {
+
+
+            &--item {
+
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .services {
         background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
             url("/dist/img/background_header2.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment:fixed;
+        background-attachment: fixed;
 
         &__boxes {
             display: flex;
@@ -171,239 +171,305 @@
 
         }
     }
- }
+
+    .opinion {
+
+        &__name {
+            top: -20px;
+            left: 15px;
+            font-size: 1.2rem;
+        }
+
+        &__text {
+            font-size: 1.1rem;
+        }
+
+        &__stars {
+            top: -22px;
+            left: 520px;
+            font-size: 1.2rem;
+        }
+    }
+}
 
 
- //--900--//
+//--900--//
 
- @media (min-width: 900px) {
+@media (min-width: 900px) {
 
-     .about {
-
-
-         &__box {
-             padding: .5em 1em;
+    .about {
 
 
-         }
-
-         &__img {
-             width: 450px;
-
-         }
-
-         &__list {
+        &__box {
+            padding: .5em 1em;
 
 
-             &--item {
-                 margin-bottom: .5em;
-                 font-size: 1.4rem;
-             }
-         }
-     }
+        }
 
- }
+        &__img {
+            width: 450px;
 
+        }
 
+        &__list {
 
 
+            &--item {
+                margin-bottom: .5em;
+                font-size: 1.4rem;
+            }
+        }
+    }
 
- //--992--//
-
-
- @media (min-width: 992px) {
-
-
-     .hero {
-         height: auto;
-
-         &__img {
-             width: 450px;
-             height: 400px;
-
-         }
-
-     }
-
-     .review {
-         &__tittle {
-             font-size: 2rem;
-         }
-
-         &__text {
-             font-size: 1.6rem;
-         }
-
-         a {
-
-
-             img {
-                 top: -16px;
-                 left: -20px;
-                 width: 75px;
-                 height: 65px;
-
-             }
-         }
-     }
-
-     .info {
-
-
-         &__icon {
-             font-size: 1.6rem;
-         }
-
-
-         &__header {
-             font-size: 1.6rem;
-
-         }
-     }
+    .opinion {
 
 
 
-     .about {
+        &__stars {
+            top: -22px;
+            left: 680px;
 
-                &__title {
-                
-                        font-size: 2.2rem;
-                
+        }
+    }
+
+}
+
+
+
+
+
+//--992--//
+
+
+@media (min-width: 992px) {
+
+
+    .hero {
+        height: auto;
+
+        &__img {
+            width: 450px;
+            height: 400px;
+
+        }
+
+    }
+
+    .review {
+        &__tittle {
+            font-size: 2rem;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+        }
+
+        a {
+
+
+            img {
+                top: -16px;
+                left: -20px;
+                width: 75px;
+                height: 65px;
+
+            }
+        }
+    }
+
+    .info {
+
+
+        &__icon {
+            font-size: 1.6rem;
+        }
+
+
+        &__header {
+            font-size: 1.6rem;
+
+        }
+    }
+
+
+
+    .about {
+
+        &__title {
+
+            font-size: 2.2rem;
+
+        }
+
+
+        &__box {
+            padding: .5em 1em;
+
+
+        }
+
+        &__img {
+            width: 500px;
+
+        }
+
+        &__list {
+
+
+            &--item {
+                margin-bottom: 1em;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .services {
+        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+            url("/dist/img/background_header2.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        &__boxes {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 1em;
+
+
+        }
+
+        .service {
+            &__tittle {
+                font-family: "Audiowide", sans-serif;
+                text-transform: uppercase;
+                font-size: 1.6rem;
+                color: grey;
+                border-bottom: 1px solid whitesmoke;
+                padding: .5em 0;
+            }
+
+            &__text {
+                font-size: 1.1rem;
+                text-transform: capitalize;
+            }
+
+            &__box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                background: rgba(255, 255, 255, 0.1);
+                text-align: center;
+                width: 250px;
+                height: 350px;
+                border: none;
+                border-radius: 10px;
+                padding: 1em .5em;
+                transition: .3s;
+
+                &:hover {
+                    box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.3);
+                }
+            }
+
+            &__boxes {
+
+                &--top,
+                &--bottom {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: row;
+                    margin: 2em 0;
+
+
+                }
+            }
+
+        }
+    }
+
+ 
+
+    .opinion {
+
+        &__box{
+            margin-right: 1em;
+            height: 160px;
+        }
+
+        &__name {
+            top: -21px;
+            left: 15px;
+            font-size: 1.2rem;
+        }
+
+        &__text {
+            margin: .3em auto;
+            font-size: 1.1rem;
+        }
+
+        &__stars {
+            top: -24px;
+            left: 310px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+//--1024--//
+
+@media (min-width: 1024px) {
+
+    .about {
+
+        &__box {
+            padding: .5em 1em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        &__title {
+
+            font-size: 2.5rem;
+
+
+        }
+
+        &__box {
+            padding: 1em 1em;
+
+
+
+        }
+
+        &__img {
+            width: 550px;
+        }
+
+        &__list {
+
+
+            &--item {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+
+                .opinion {
+        
+                    &__stars {
+                        top: -23px;
+
                     }
+                }
 
-
-         &__box {
-             padding: .5em 1em;
-
-
-         }
-
-         &__img {
-             width: 500px;
-
-         }
-
-         &__list {
-
-
-             &--item {
-                 margin-bottom: 1em;
-                 font-size: 1.6rem;
-             }
-         }
-     }
-
-          .services {
-              background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-                  url("/dist/img/background_header2.png");
-              background-position: center;
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-attachment: fixed;
-    
-              &__boxes {
-                  display: flex;
-                  justify-content: space-evenly;
-                  align-items: center;
-                  flex-direction: row;
-                  flex-wrap: wrap;
-                  padding: 1em;
-    
-    
-              }
-    
-              .service {
-                  &__tittle {
-                      font-family: "Audiowide", sans-serif;
-                      text-transform: uppercase;
-                      font-size: 1.6rem;
-                      color: grey;
-                      border-bottom: 1px solid whitesmoke;
-                      padding: .5em 0;
-                  }
-    
-                  &__text {
-                      font-size: 1.1rem;
-                      text-transform: capitalize;
-                  }
-    
-                  &__box {
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                      flex-direction: column;
-                      background: rgba(255, 255, 255, 0.1);
-                      text-align: center;
-                      width: 250px;
-                      height: 350px;
-                      border: none;
-                      border-radius: 10px;
-                      padding: 1em .5em;
-                      transition: .3s;
-    
-                      &:hover {
-                          box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.3);
-                      }
-                  }
-    
-                  &__boxes {
-    
-                      &--top,
-                      &--bottom {
-                          width: 100%;
-                          display: flex;
-                          justify-content: space-evenly;
-                          align-items: center;
-                          flex-direction: row;
-                          margin: 2em 0;
-    
-    
-                      }
-                  }
-    
-              }
-          }
- }
-
- //--1024--//
-
- @media (min-width: 1024px) {
-
-     .about {
-
-         &__box {
-             padding: .5em 1em;
-             display: flex;
-             justify-content: space-around;
-             align-items: center;
-             width: 100%;
-         }
-
-         &__title {
-
-             font-size: 2.5rem;
-
-
-         }
-
-         &__box {
-             padding: 1em 1em;
-
-
-
-         }
-
-         &__img {
-             width: 550px;
-         }
-
-         &__list {
-
-
-             &--item {
-                 font-size: 1.6rem;
-             }
-         }
-     }
-
- }
+}
