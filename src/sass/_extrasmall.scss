@@ -36,6 +36,7 @@
     height: 50vh;
     z-index: 2;
     overflow: hidden;
+ 
 
     &__info {
         padding: .2em;
@@ -53,6 +54,11 @@
         .fa-phone {
             margin-right: 0.4em;
         }
+    }
+
+    &__tele{
+        font-family: "Audiowide", sans-serif;
+
     }
 
 
