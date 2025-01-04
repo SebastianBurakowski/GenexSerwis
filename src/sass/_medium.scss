@@ -175,7 +175,7 @@
     .opinion {
 
         &__name {
-            top: -20px;
+            top: -22px;
             left: 15px;
             font-size: 1.2rem;
         }
@@ -186,8 +186,53 @@
 
         &__stars {
             top: -22px;
-            left: 520px;
+            left: 540px;
             font-size: 1.2rem;
+        }
+    }
+
+    .contact {
+        &__box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+
+
+        &__title {
+            font-family: "Audiowide", sans-serif;
+            font-size: 1.4rem;
+            padding: .5em 0;
+
+        }
+
+        &__text {
+            font-size: 1.2rem;
+
+        }
+
+        &__map {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1em 0;
+
+            &-frame {
+                width: 50vw;
+                height: 50vh;
+            }
+        }
+
+        &__details {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            height: 50vh;
+            padding: .5em 1em;
+            border-top: none;
         }
     }
 }
@@ -394,11 +439,11 @@
         }
     }
 
- 
+
 
     .opinion {
 
-        &__box{
+        &__box {
             margin-right: 1em;
             height: 160px;
         }
@@ -464,12 +509,37 @@
     }
 
 
-                .opinion {
-        
-                    &__stars {
-                        top: -23px;
+    .opinion {
 
-                    }
+        &__stars {
+            top: -23px;
+
+        }
+    }
+
+
+        .contact {
+    
+    
+            &__title {
+                font-size: 1.6rem;
+    
+            }
+    
+            &__text {
+                font-size: 1.4rem;
+    
+            }
+    
+            &__map {
+
+    
+                &-frame {
+                    width: 60vw;
+                    height: 50vh;
                 }
+            }
+    
+        }
 
 }

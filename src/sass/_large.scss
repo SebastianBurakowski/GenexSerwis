@@ -148,6 +148,28 @@
                     }
                 }
 
-   
+                   .contact {
+        
+        
+                       &__title {
+                           font-size: 2rem;
+        
+                       }
+        
+                       &__text {
+                           font-size: 1.6rem;
+        
+                       }
+        
+                       &__map {
+        
+        
+                           &-frame {
+                               width: 60vw;
+                               height: 60vh;
+                           }
+                       }
+        
+                   }
 
 }

@@ -2,6 +2,8 @@
 
 
 .header {
+
+
     color: whitesmoke;
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
     text-align: center;
@@ -20,7 +22,6 @@
 }
 
 .hero {
-
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -36,7 +37,7 @@
     height: 50vh;
     z-index: 2;
     overflow: hidden;
- 
+
 
     &__info {
         padding: .2em;
@@ -56,7 +57,7 @@
         }
     }
 
-    &__tele{
+    &__tele {
         font-family: "Audiowide", sans-serif;
 
     }
@@ -402,7 +403,7 @@
         position: relative;
         border-top: 1px solid wheat;
         border-bottom: 1px solid wheat;
-        // border-radius: 8px;
+        height: 110px;
 
 
     }
@@ -434,6 +435,52 @@
         text-align: center;
         font-size: .8rem;
         padding: .5em 0;
+    }
+
+
+}
+
+.contact {
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+
+    &__title {
+        font-family: "Audiowide", sans-serif;
+        font-size: 1.3rem;
+        padding: .5em 0;
+
+    }
+
+    &__text {
+        font-size: 1rem;
+        padding: .2em 0;
+    }
+
+    &__map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1em 0;
+
+        &-frame {
+            width: 80vw;
+            height: 50vh;
+            border-radius: 8px;
+        }
+    }
+
+    &__details {
+        text-align: center;
+        padding: 1em 0;
+        border-top: 1px solid whitesmoke;
     }
 }
 
@@ -607,13 +654,13 @@
         }
     }
 
-        .opinion {
+    .opinion {
 
-    
-            &__stars {
-                top: -17px;
-                left: 260px;
-            }
+
+        &__stars {
+            top: -17px;
+            left: 260px;
         }
+    }
 
 }
