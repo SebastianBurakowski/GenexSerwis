@@ -40,11 +40,8 @@
 
 
     &__info {
+        position: relative;
         padding: .2em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
         width: 100%;
     }
 
@@ -53,13 +50,32 @@
         font-size: .6rem;
 
         .fa-phone {
-            margin-right: 0.4em;
+            position: absolute;
+            top: 15px;
+            right: 85px;
+            font-size: .4rem;
+
+
         }
     }
 
     &__tele {
+        position: absolute;
+        display: block;
         font-family: "Audiowide", sans-serif;
+        font-size: .6rem;
+        text-decoration: none;
+        color: whitesmoke;
 
+        &--first {
+            top: 5px;
+            right: 10px;
+        }
+
+        &--second {
+            top: 20px;
+            right: 10px;
+        }
     }
 
 
@@ -449,6 +465,24 @@
         flex-direction: column;
 
     }
+    &__telephone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__privacy {
+        text-align: center;
+        font-size: .5rem;
+        padding: 1em 2em;
+
+        &--link{
+            font-weight: bold;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+    }
 
 
     &__title {
@@ -461,6 +495,11 @@
     &__text {
         font-size: 1rem;
         padding: .2em 0;
+
+        &--tel{
+            color: whitesmoke;
+            text-decoration: none;
+        }
     }
 
     &__map {
@@ -482,7 +521,29 @@
         padding: 1em 0;
         border-top: 1px solid whitesmoke;
     }
+
 }
+
+.footer {
+    background-color: black;
+
+    &__text {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1rem;
+        padding: .3em 0;
+    }
+
+    &__credits {
+        display: block;
+        color: whitesmoke;
+        font-size: .5rem;
+        text-decoration: none;
+        padding: .2em;
+
+    }
+}
+
 
 
 
@@ -640,6 +701,7 @@
     }
 
 
+
     .service {
 
 
@@ -660,6 +722,14 @@
         &__stars {
             top: -17px;
             left: 260px;
+        }
+    }
+
+    .contact {
+        &__privacy {
+
+            font-size: .7rem;
+
         }
     }
 

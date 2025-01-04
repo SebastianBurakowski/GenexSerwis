@@ -33,6 +33,27 @@
             left: 853px;
             top: 213px;
         }
+
+        .fa-phone {
+            font-size: 1.6rem;
+            top: 45px;
+            right: 210px;
+        }
+
+        &__tele {
+            font-size: 1.6rem;
+
+            &--first {
+                top: 30px;
+                right: 20px;
+            }
+
+            &--second {
+                top: 65px;
+                right: 20px;
+
+            }
+        }
     }
 
     .about {
@@ -146,6 +167,8 @@
             left: 853px;
             top: 213px;
         }
+
+
     }
 
     .about {
