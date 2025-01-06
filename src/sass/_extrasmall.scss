@@ -247,6 +247,7 @@
 
     &__box,
     &__info {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -267,8 +268,12 @@
     }
 
     &__info {
-        margin-right: 2em;
+        margin-right: 1.5em;
 
+    }
+
+    &__arrow {
+        font-size: .6rem;
     }
 
 }
@@ -465,7 +470,8 @@
         flex-direction: column;
 
     }
-    &__telephone{
+
+    &__telephone {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -477,7 +483,7 @@
         font-size: .5rem;
         padding: 1em 2em;
 
-        &--link{
+        &--link {
             font-weight: bold;
             color: whitesmoke;
             text-decoration: none;
@@ -496,7 +502,7 @@
         font-size: 1rem;
         padding: .2em 0;
 
-        &--tel{
+        &--tel {
             color: whitesmoke;
             text-decoration: none;
         }
@@ -698,6 +704,17 @@
         }
 
 
+    }
+
+    .review {
+        &__info {
+            margin-right: 1.5em;
+
+        }
+
+        &__arrow {
+            font-size: .7rem;
+        }
     }
 
 

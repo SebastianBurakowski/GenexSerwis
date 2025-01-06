@@ -49,6 +49,11 @@
         &__text {
             font-size: 2rem;
         }
+
+        &__info {
+            margin-right: 3em;
+
+        }
     }
 
     .info {
@@ -127,49 +132,49 @@
         }
     }
 
-                .opinion {
-        
-        
-                    &__name {
-                        top: -21px;
-                        left: 15px;
-                        font-size: 1.4rem;
-                    }
-        
-                    &__text {
-                        margin: .5em auto;
-                        font-size: 1.2rem;
-                    }
-        
-                    &__stars {
-                        top: -26px;
-                        left: 390px;
-                        font-size: 1.4rem;
-                    }
-                }
+    .opinion {
 
-                   .contact {
-        
-        
-                       &__title {
-                           font-size: 2rem;
-        
-                       }
-        
-                       &__text {
-                           font-size: 1.6rem;
-        
-                       }
-        
-                       &__map {
-        
-        
-                           &-frame {
-                               width: 60vw;
-                               height: 60vh;
-                           }
-                       }
-        
-                   }
+
+        &__name {
+            top: -21px;
+            left: 15px;
+            font-size: 1.4rem;
+        }
+
+        &__text {
+            margin: .5em auto;
+            font-size: 1.2rem;
+        }
+
+        &__stars {
+            top: -26px;
+            left: 390px;
+            font-size: 1.4rem;
+        }
+    }
+
+    .contact {
+
+
+        &__title {
+            font-size: 2rem;
+
+        }
+
+        &__text {
+            font-size: 1.6rem;
+
+        }
+
+        &__map {
+
+
+            &-frame {
+                width: 60vw;
+                height: 60vh;
+            }
+        }
+
+    }
 
 }
