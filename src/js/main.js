@@ -1,6 +1,7 @@
 let aboutSection;
 let listItems
 let footerSpan
+let header
 
 
 const prepareDomElements = () => {
@@ -11,12 +12,22 @@ const prepareDomElements = () => {
   aboutSection = document.querySelector('.about')
 listItems = document.querySelectorAll('.about__list--item')
     footerSpan = document.querySelector('.footer__year')
+    header = document.querySelector('.header')
 }
 
 //FUNCTIONS
 const handleYear = () => {
     const year = (new Date).getFullYear()
     footerSpan.innerText = year
+    
+}
+
+const handleHeaderShow = () => {
+    if(window.scrollY >= 1){
+        header.classList.add('headerShow')
+    } else if (window.scrollY <= 0){
+        header.classList.remove('headerShow')
+    }
     
 }
 
@@ -40,6 +51,7 @@ const prepareDomEvents = () => {
 
     ////////// WYWOŁANIE FUNKCJI ///////////////////
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleHeaderShow);
 }
 
 ///// GŁOWNE WYWOŁANIE FUNKCJI /////
