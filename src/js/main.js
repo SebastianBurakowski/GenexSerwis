@@ -39,7 +39,6 @@ const handleScroll = () => {
     if(sectionTop <= windowHeight * 0.3){
         listItems.forEach(item => {
             item.classList.add('active')
-            console.log("siema");
             
         });
     }
