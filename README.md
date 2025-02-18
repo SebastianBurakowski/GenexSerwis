@@ -5,7 +5,7 @@
 <p align="left">Link :</p>
 
 <h2 align="left">https://sebastianburakowski.github.io/GenexSerwis/</h2>
-<p>Czeka na akceptajcę od klienta</p>
+
 
 ###
 
